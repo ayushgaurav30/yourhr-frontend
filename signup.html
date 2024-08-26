@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - YourHR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="qualifications">Qualifications:</label>
+        <input type="text" id="qualifications" name="qualifications" required><br>
+        <label for="preferred_role">Preferred Job Role:</label>
+        <input type="text" id="preferred_role" name="preferred_role" required><br>
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" accept="application/pdf" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
